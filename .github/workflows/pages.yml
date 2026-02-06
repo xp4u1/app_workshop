@@ -2,10 +2,7 @@ name: GitHub Pages
 
 on:
   push:
-    # Triggers on any push to master.
     branches: ["main"]
-
-  # Allows to run this workflow manually from the Actions tab.
   workflow_dispatch:
 
 permissions:
@@ -34,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build project
-        run: pnpm build --public-url "/workshop"
+        run: pnpm build --public-url "/app_workshop"
       # Save
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

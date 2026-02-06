@@ -101,9 +101,6 @@ Musterlösungen für die Apps sind im Verzeichnis [`/docs`](./docs) zu finden.
 ### Quickstart
 
 ```sh
-# Repo klonen
-$ git clone git@github.com:xp4u1/workshop
-
 # Pakete herunterladen
 $ pnpm install
 
@@ -134,8 +131,8 @@ du [hier](./app).
 
 ```sh
 # Image bauen
-$ docker build -t workshop
+$ docker build -t app_workshop .
 
 # Container erstellen
-$ docker run -it --name workshop --rm -p 3000:3000 workshop
+$ docker run -it --name app_workshop --rm -p 3000:3000 app_workshop
 ```
